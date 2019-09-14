@@ -1,4 +1,16 @@
 $(document).ready(function() {
+  //toggler btn
+  $(".navbar-toggler").click(function() {
+    $(".navbar-toggler").toggleClass("change");
+  });
+  //Sticky navbar less paddin
+  $(window).scroll(function() {
+    let position = $(this).scrollTop();
+    console.log(position);
+  });
+});
+
+$(document).ready(function() {
   //ripples
   $("#header, .info").ripples({
     dropRadius: 25,
